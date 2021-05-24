@@ -28,9 +28,14 @@ func main() {
 	for k, v := range persons {
 		fmt.Printf("%s is %d years old.\n", k, v)
 	}
+	// could also just over keys
+	for k2 := range persons {
+		fmt.Printf("key: %s\n", k2)
+	}
 
 	// Range with map - use one
 	for k := range persons {
 		fmt.Printf("Name is %s.\n", k)
+		fmt.Printf("Name is %v.\n", k)
 	}
 }
